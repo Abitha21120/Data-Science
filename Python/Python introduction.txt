@@ -1,0 +1,43 @@
+1. What are version available in python?
+-Python 1
+-Python 2(it support python1 feature)-
+-Python 3(it does not support Python 2 feature)
+  
+2. What are features of python?
+-Dynamically typed language
+-platform independently
+-portability
+-open source
+-interpreted
+-both procedure-oriented and object-oriented 
+-Extensible
+-Embedded(python program run with c ,c++, and java language)
+
+3. What are steps to install python?
+-Download Python 3 latest version
+-install python
+-check the Python installation using the command prompt (type py --version)
+-verify it is installed
+
+4. What are language python borrowed from?
+-functional language from c
+-oops concept from C++
+-scripting from perl and shell script
+
+5. What we use python?
+-desktop application
+-machine learning
+-artificial intelligence
+-database application
+-IOT(internet of things)
+-data analytics
+-web application
+
+6. What are limitation of python?
+-large memory consumption 
+-Compared to other languages python compile time is slow
+
+
+
+
+
