@@ -1,0 +1,472 @@
+1. What are datatypes available in python?
+ -float
+ -int
+ -str
+ -bool
+ -complex
+ -byte
+ -bytearray
+ -range
+ -list
+ -tuple
+ -dict
+ -None
+-frozenset
+
+2. What is mean by dynamically type?
+  written in the English language after the compiler converts  it into machine language 
+   0's and 1's
+    
+3. Write a syntax of variable declaration?
+  variable name=value
+
+4. What are rule for creating variable?
+   camel notation- except the first word, all words starts with a capital letter(ex-dataTypes)
+   Pascal notation-each word starts with a capital letter(ex-DataTypes, DATATYPES)
+   snake case-Each word starts and separated by an underscore (ex-_data_type,data_type)
+
+5. What is purpose of print()?
+ print() - whatever we type inside of parentheses with single quotes or double quotes showns as output
+
+6. What is purpose of type()?
+ type() is used to know which datatype it is
+
+7. Is it possible to change variable value?
+   yes it is possible
+
+8. What happen we can intialize the same  variable again in python?
+   last declared value of variable shown as output
+  for ex:
+  x=10
+  print(x)
+  x=20
+  print(x)
+  the x value is 20
+
+QUESTIONS(Programs)
+--------------------
+QUESTION 1:
+------------
+Description: Using datatype intialize the below details
+             emp_Id
+             emp_Name
+             emp_Email
+             emp_Phone_No
+             emp_Salary
+             emp_Gender
+             emp_City
+
+emp_Id=5432
+print(emp_Id) =5432
+print(type(emp_Id))  =int
+
+emp_Name="abitha"
+print(emp_Name)  =abitha
+print(type(emp_Name)) = str
+
+emp_Email="abithakasthuri2000@gmail.com"
+print(emp_Email)  =abithakasthuri2000@gmail.com
+print(type(emp_Email))  =str
+
+emp_Phone_No="7358526764"
+print(emp_Phone_No)  =7358526764
+print(type(emp_Phone_No))  =str
+
+emp_Salary=12000.00
+print(emp_Salary)  =12000.00
+print(type(emp_Salary))  =float
+
+emp_Gender="female"
+print(emp_Gender)  =female
+print(type(emp_Gender))  =str
+
+emp_City="tittagudi"
+print(emp_City)  =tittagudi
+print(type(emp_City))  =str
+
+QUESTION 2:
+-------------
+Description: Using input() method get the below details
+
+studentID=int(input("enter your studentID: "))
+print(studentID)
+ans:
+enter your studentID: 814319104001s
+814319104001
+
+studentName=str(input("enter your name: "))
+print(studentName)
+ans:
+enter your name: abitha
+abitha
+
+
+Mark_1=int(input())
+Mark_2=int(input())
+Mark_3=int(input())
+Mark_4=int(input())
+Mark_5=int(input())
+print(Mark_1)
+print(Mark_2)
+print(Mark_3)
+print(Mark_4)
+print(Mark_5)
+totalMark=Mark_1+Mark_2+Mark_3+Mark_4+Mark_5
+averagevalue=totalMark/5
+print("total value is ",totalMark)
+print("average value is",averagevalue)
+ans:
+10
+20
+30
+40
+50
+10
+20
+30
+40
+50
+total value is  150
+average value is 30.0
+
+QUESTION 3:
+------------
+Description: Using input() method get the below details
+
+student_Id=int(input("enter your studentID: "))
+print("your studentID is: ",student_Id)
+student_Name=str(input("enter your name: "))
+print("your name is: ",student_Name)
+student_Email=str(input("enter your email Id: "))
+print("your email Id: ",student_Email)
+student_Phoneno=int(input("enter your phoneno: "))
+print("your phoneno is: ",student_Phoneno)
+student_Dept=str(input("enter your department name: "))
+print("your department name is: ",student_Dept)
+student_Gender=str(input("enter your gender: "))
+print("your gender is : ",student_Gender)
+student_City=str(input("enter your city name: "))
+print("your city is: ",student_City)
+
+ans:
+enter your studentID: 814319104001
+your studentID is:  814319104001
+enter your name: abitha
+your name is:  abitha
+enter your email Id: abithakasthuri2000@gmail.com
+your email Id:  abithakasthuri2000@gmail.com
+enter your phoneno: 358526647
+your phoneno is:  358526647
+enter your department name: computer science engineering
+your department name is:  computer science engineering
+enter your gender: female
+your gender is :  female
+enter your city name: tittagudi
+your city is:  tittagudi
+
+QUESTION 4:
+------------
+Description: Using datatype intialize the below details
+             clg_Id
+             clg_Name
+             clg_Email
+             clg_Phone_No
+             clg_Code
+             clg_Dept_Count
+             clg_Address
+
+clg_Id=54344
+print(clg_Id)
+print(type(clg_Id))=int
+
+clg_Name="anna university"
+print(clg_Name)
+print(type(clg_Name))=str
+
+clg_Email="abithakasthuri2000@gmail.com"
+print(clg_Email)
+print(type(clg_Email))=str
+
+clg_Phone_No="7358526764"
+print(clg_Phone_No)  =7358526764
+print(type(clg_Phone_No))  =str
+
+clg_Code="annauni01"
+print(clg_Code)  annauni01
+print(type(clg_Code))  =str
+
+clg_Dept_Count=6
+print( clg_Dept_Count)  =6
+print(type( clg_Dept_Count))  =int
+
+clg_Address="202,South Street,tittagudi ,Cuddalore"
+print(clg_Address)  =202,south street,tittagudi,cuddalore
+print(type(clg_Address))  =str
+
+QUESTION 5:
+------------
+Description: Using datatype intialize the below details
+             com_Id
+             com_Name
+             com_Email
+             com_Phone_No
+             com_Employee_Count
+             com_Location
+             com_Revenue
+             com_CEO
+             com_Founded_Date
+
+com_Id=54344
+print(com_Id)  =54344
+print(type(com_Id))  =int
+
+com_Name="zoho"
+print(com_Name)  =zoho
+print(type(com_Name))  =str
+
+com_Email="abithakasthuri2000@gmail.com"
+print(com_Email)  =abithakasthuri2000@gmail.com
+print(type(com_Email))  =str
+
+com_Phone_No="7358526764"
+print(com_Phone_No)  =7358526764
+print(type(com_Phone_No))  =str
+
+com_Employee_Count=1000
+print(com_Employee_Count)  =1000
+print(type(com_Employee_Count))  =int
+
+com_Location="chennai"
+print(com_Location)  =chennai
+print(type(com_Location))   =str
+
+com_Revenue=200000.00
+print(com_Revenue)  =200000.00
+print(type(com_Revenue))  =float
+
+com_CEO="Sridhar Vembu"
+print(com_CEO)  =sridhar  vembu
+print(type(com_CEO))  =str
+
+com_Founded_Date="02-11-1986"
+print(com_Founded_Date) = 02-11-1986
+print(type(com_Founded_Date))  =str
+
+
+QUESTION 6:
+------------
+Description: Using input() method get 15 bankdetails [15 variables]
+
+your_name = input("Enter your name: ")
+print(your_name)
+your_email = input("Enter your email ID: ")
+print(your_email)
+your_phone_no = int(input("Enter your phone number: "))
+print(your_phone_no)
+your_gender = input("Enter your gender: ")
+print(your_gender)
+your_balance = float(input("Enter your balance: "))
+print(your_balance)
+your_address = input("Enter your address: ")
+print(your_address)
+your_bank_name = input("Enter your bank name: ")
+print(your_bank_name)
+your_branch_name = input("Enter your branch name: ")
+print(your_branch_name)
+your_aadhar_number = int(input("Enter your Aadhar number: "))
+print(your_aadhar_number)
+your_ifsc_code = input("Enter your IFSC code: ")
+print(your_ifsc_code)
+your_account_no = int(input("Enter your account number: "))
+print(your_account_no)
+date_of_birth = input("Enter date of birth: ")
+print(date_of_birth)
+nationality = input("Enter nationality: ")
+print(nationality)
+account_opening_date = input("Enter account opening date: ")
+print(account_opening_date)
+
+ans:
+Enter your name: abitha
+abitha
+Enter your email ID: abithakasthuri2000@gmail.com
+abithakasthuri2000@gmail.com
+Enter your phone number: 7358526764
+7358526764
+Enter your gender: female
+female
+Enter your balance: 30000.00
+30000.0
+Enter your address: 202,south street, tittagudi,
+202,south street, tittagudi,
+Enter your bank name: indian bank
+indian bank
+Enter your branch name: avinagudi
+avinagudi
+Enter your Aadhar number: 3854482366636326
+3854482366636326
+Enter your IFSC code: 66326326
+66326326
+Enter your account number: 283848866364
+283848866364
+Enter date of birth : 02-11-2000
+02-11-20000
+Enter nationality: indian
+indian
+Enter account opening date: 02-5-2015
+02-5-2015
+
+QUESTION 7:
+------------
+Description: Using input() method enter all state name in India
+
+
+state1 = str(input("Enter your state1: "))
+state2 = str(input("Enter your state2: "))
+state3 = str(input("Enter your state3: "))
+state4 = str(input("Enter your state4: "))
+state5 = str(input("Enter your state5: "))
+state6 = str(input("Enter your state6: "))
+state7 = str(input("Enter your state7: "))
+state8 = str(input("Enter your state8: "))
+state9 = str(input("Enter your state9: "))
+state10 = str(input("Enter your state10: "))
+state11 = str(input("Enter your state11: "))
+state12 = str(input("Enter your state12: "))
+state13 = str(input("Enter your state13: "))
+state14 = str(input("Enter your state14: "))
+state15 = str(input("Enter your state15: "))
+state16 = str(input("Enter your state16: "))
+state17 = str(input("Enter your state17: "))
+state18 = str(input("Enter your state18: "))
+state19 = str(input("Enter your state19: "))
+state20 = str(input("Enter your state20: "))
+state21 = str(input("Enter your state21: "))
+state22 = str(input("Enter your state22: "))
+state23 = str(input("Enter your state23: "))
+state24 = str(input("Enter your state24: "))
+state25 = str(input("Enter your state25: "))
+state26 = str(input("Enter your state26: "))
+state27 = str(input("Enter your state27: "))
+state28 = str(input("Enter your state28: "))
+
+print(state1)
+print(state2)
+print(state3)
+print(state4)
+print(state5)
+print(state6)
+print(state7)
+print(state8)
+print(state9)
+print(state10)
+print(state11)
+print(state12)
+print(state13)
+print(state14)
+print(state15)
+print(state16)
+print(state17)
+print(state18)
+print(state19)
+print(state20)
+print(state21)
+print(state22)
+print(state23)
+print(state24)
+print(state25)
+print(state26)
+print(state27)
+print(state28)
+
+ans:
+Enter your state1:  arunchal pradesh
+Enter your state2: Andhra Pradesh
+Enter your state3: Bihar
+Enter your state4: Chhattisgarh
+Enter your state5: goa
+Enter your state6: gujarat
+Enter your state7: haryana
+Enter your state8: himachal pradesh
+Enter your state9: jharkhand
+Enter your state10: karnataka
+Enter your state11: kerala
+Enter your state12: madhyapradesh
+Enter your state13: maharashtra
+Enter your state14: manipur
+Enter your state15: maghalaya
+Enter your state16: mizoram
+Enter your state17: nagaland
+Enter your state18: odisha
+Enter your state19: punjab
+Enter your state20: rajasthan
+Enter your state21: sikkim
+Enter your state22: tamilnadu
+Enter your state23: telangana
+Enter your state24: tripura
+Enter your state25: uttatpradesh
+Enter your state26: west bengal
+Enter your state27:assam
+Enter your state28: uttarkhand
+arunchal pradesh
+Andhra Pradesh
+Bihar
+Chhattisgarh
+goa
+gujarat
+haryana
+himachal pradesh
+jharkhand
+karnataka
+kerala
+madhyapradesh
+maharashtra
+manipur
+maghalaya
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamilnadu
+telangana
+tripura
+uttatpradesh
+west bengal
+assam
+uttarkhand
+
+task
+print(str("abitha"))
+print(str(10))
+print(str(10.0))
+print(str("10"))
+print(str("10.0"))
+print(str(10+3j))
+print(str("10+3j"))
+print(str(True))
+print(str("True"))
+print(str("False"))
+print(str(False))
+print(str(o))#nameerror
+
+ans:
+abitha
+10
+10.0
+10
+10.0
+(10+3j)
+10+3j
+True
+True
+False
+False
+
+
+
+
+
+
+
