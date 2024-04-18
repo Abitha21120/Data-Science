@@ -1,0 +1,382 @@
+Questions(Theory ):
+-----------------------
+1.What is tuple?
+-tuples are used to store multiple value in single variable
+-it will print in insertion order
+-it allow duplicate values
+-it is immutable the value cannot be changed
+-it will work based on index
+-it use parenthesis
+2.What is the differece between list and tuple?
+list
+-list is mutable
+-list use Square bracket
+tuple
+-tuple is immutable
+-tuple use parenthesis
+
+3.What are the methods present in tuple?
+in
+not in
+len()
+count()
+slice operator
+index()
+max()
+min()
+
+4.Advantages of Tuple over List?
+the value cannot be changed,added,or removed. 
+
+5.How to remove the values present in tuple?
+tuples are immutable we cannot change the value 
+
+QUESTION 1:
+------------------
+QUESTION 1.1:
+--------------------
+Description : Create a new tuple with values and find the length of it
+              Input : tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+print(len(t))
+ans:8
+
+QUESTION 1.2:
+--------------------
+Description : Create a new tuple with values and find the length of it
+              Input : tuple = 100,200,300,400,500,600,700
+
+t=(100,200,300,400,500,600,700)
+print(len(t))
+ans:7
+
+QUESTION 1.3:
+--------------------
+Description : Create a new tuple with values and find the length of it
+              Input : tuple = python,selenium,sql,java
+
+t=("python","selenium","sql","java")
+print(len(t))
+ans:4
+
+QUESTION 1.4:
+--------------------
+Description : Create a new tuple with values and find the length of it
+              Input : tuple =10,20,30,90,10,10,40,50,python,java,22.4,True
+
+t=(10,20,30,90,10,10,40,50,"python","java",22.4,"True")
+print(len(t))
+ans:12
+
+QUESTION 2:
+------------------
+QUESTION 2.1:
+-------------------
+Description : Get the first index value of 10 
+              Input:  tuple =10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+print(t.index(10))
+ans:0
+
+QUESTION 2.2:
+--------------------
+Description : Get the last index value of 10 
+              Input:   List = 10,20,30,90,10,10,40,50
+
+
+
+QUESTION 2.3:
+--------------------
+Description : Get the index value of 50 
+              Input:   tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+print(t.index(50))
+ans:7
+
+QUESTION 2.4:
+--------------------
+Description : Get the index value of 200 
+              Input:   tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+print(t.index(200))
+ans:valueError
+
+QUESTION 2.5:
+--------------------
+Description : Get the each index value of 10 present in below tuple
+              Input:    tuple = 10,20,30,90,10,10,40,50,10
+
+t=(10,20,30,90,10,10,40,50)
+print(t.index(10))
+print(t.index(10,3))
+print(t.index(10,4))
+ans:
+0
+4
+4
+
+QUESTION 3:
+------------------
+QUESTION 3.1:
+--------------------
+Description : Get the value present at 2nd index
+              Input:   tuple = 10,20,30,40,50,60
+
+t=(10,20,30,40,50)
+print(t[2])
+ans:30
+
+QUESTION 3.2:
+--------------------
+Description : Get the value present at 4th index
+              Input:   tuple = 100,200,300,400,500,600,700
+
+t=(100,200,300,400,500,600,700)
+print(t[4])
+ans:500
+
+QUESTION 3.3:
+--------------------
+Description : Get the value present at 12th index
+              Input:  tuple = 105,205,305,405,505,605,705,805
+
+t=(105,205,305,405,505,605,705,805)
+print(t[12])
+ans:IndexError
+
+QUESTION 3.4:
+--------------------
+Description : Get the value present at -3rd index
+              Input:  tuple = 105,205,305,405,505,605,705,805
+t=(105,205,305,405,505,605,705,805)
+print(t[-3])
+ans:605
+
+QUESTION 3.5:
+--------------------
+Description : Get the value present at -8th index
+              Input:  tuple = 105,205,305,405,505,605,705,805
+
+t=(105,205,305,405,505,605,705,805)
+print(t[-8])
+ans:105
+
+QUESTION 4:
+------------------
+QUESTION 4.1:
+--------------------
+Description : Add a value 100 at the last position of tuple
+              Input:   tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+s=(100,)
+v=t+s
+print(v)
+ans:
+(10, 20, 30, 90, 10, 10, 40, 50, 100)
+
+QUESTION 4.2:
+--------------------
+Description : Add a value 'python' at the last position of tuple
+              Input:   tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+s=('python',)
+v=t+s
+print(v)
+ans:
+(10, 20, 30, 90, 10, 10, 40, 50, 'python')
+
+
+QUESTION 4.3:
+--------------------
+Description : Add a values (100,200,300) at the last position of tuple
+              Input:   tuple = 10,20,30,90,10,10,40,50
+
+t=(10,20,30,90,10,10,40,50)
+s=(100,200,300)
+v=t+s
+print(v)
+ans:
+(10, 20, 30, 90, 10, 10, 40, 50, 100, 200, 300)
+
+QUESTION 4.4:
+--------------------
+Description : Add a values ('java','python') at the last position of tuple
+              Input:   tuple = 10,20,30,90,10,10,40,50
+t=(10,20,30,90,10,10,40,50)
+s=('java','python')
+v=t+s
+print(v)
+ans:
+(10, 20, 30, 90, 10, 10, 40, 50, 'java', 'python')
+
+QUESTION 5:
+------------------
+QUESTION 5.1:
+--------------------
+Description : Count the 10 value present in tuple
+              Input:    tuple  = 10,20,30,90,10,10,40,50,10
+
+t=(10,20,30,90,10,10,40,50,10)
+print(t.count(10))
+ans:4
+
+QUESTION 5.2:
+--------------------
+Description :Find the maximum value  in tuple
+              Input:    tuple  = 10,20,30,90,10,10,40,50,10
+
+t=(10,20,30,90,10,10,40,50,10)
+print(max(t))
+ans:90
+
+QUESTION 5.3:
+--------------------
+Description :Find the maximum value  in tuple
+              Input:    tuple  = python,selenium,sql,java
+
+t=('python','selenium','sql','java')
+print(max(t))
+ans:sql
+
+QUESTION 5.4:
+--------------------
+Description :Find the minimum value  in tuple
+              Input:    tuple  = 10,20,30,90,10,10,40,50,10
+t=(10,20,30,90,10,10,40,50,10)
+print(min(t))
+ans:10
+
+QUESTION 5.5:
+--------------------
+Description :Find the minimum value  in tuple
+              Input:    tuple  = python,selenium,sql,java
+
+t=('python','selenium','sql','java')
+print(min(t))
+ans:java
+
+QUESTION 6:
+--------------------
+QUESTION 6.1:
+--------------------
+Description :Convert string into tuple
+              Input:python
+
+t="python"
+print(tuple(t))
+ans:('p', 'y', 't', 'h', 'o', 'n')
+
+QUESTION 6.2:
+--------------------
+Description :Convert list into tuple
+              Input:List = ['java','python',20,10,60]
+
+t=['java','python',20,10,60]
+print(tuple(t))
+ans:('java', 'python', 20, 10, 60)
+
+QUESTION 7:
+--------------------
+QUESTION 7.1:
+--------------------
+Description : To check weather value 200 is present or not in tuple
+              Input:  tuple = 105,205,305,405,505,605,705,805
+
+t=(105,205,305,405,505,605,705,805)
+print(200 in t)
+ans:
+False
+
+QUESTION 7.2:
+--------------------
+Description : To check weather value 505 is present or not in tuple
+              Input:  tuple = 105,205,305,405,505,605,705,805
+t=(105,205,305,405,505,605,705,805)
+print(505 in t)
+ans:
+True
+
+QUESTION 7.3:
+--------------------
+Description : Create a tuples with values and compare the two tuple
+              Input:   tuple = 10,20,30,40,50,60
+              Input:   tuple1 = 10,20,30,40,50,60
+
+t= (10,20,30,40,50,60)
+t1=(10,20,30,40,50,60)
+print(t==t1)
+ans:
+True
+
+QUESTION 7.4:
+--------------------
+Description : Create a tuples with values and compare the two tuple
+              Input:   tuple = 10,20,30,40,50,60
+              Input:   tuple1 = 60,20,30,40,50,10
+t= (10,20,30,40,50,60)
+t1=(60,20,30,40,50,10)
+print(t==t1)
+ans:False
+
+QUESTION 8:
+--------------------
+QUESTION 8.1:
+--------------------
+Description : Get the each value of tuple by using  for loop
+              Input:   tuple = 105,205,305,405,505,605,705,805
+
+t= (105,205,305,405,505,605,705,805)
+for i in t:
+    print(i)
+ans:
+105
+205
+305
+405
+505
+605
+705
+805
+
+QUESTION 8.2:
+--------------------
+Description : Get the each value of tuple by using  Enumarate for loop
+              Input:   tuple = 105,205,305,405,505,605,705,805
+
+t= (105,205,305,405,505,605,705,805)
+for i in enumerate(t):
+    print(i)
+ans:
+(0, 105)
+(1, 205)
+(2, 305)
+(3, 405)
+(4, 505)
+(5, 605)
+(6, 705)
+(7, 805)
+
+QUESTION 8.3:
+---------------------
+Description : Get the each value of tuple by using  Enumarate for loop and print only even index value
+              Input:   tuple = 105,205,305,405,505,605,705,805
+
+t= (105,205,305,405,505,605,705,805)
+for i,v in enumerate(t):
+    if i%2==0:
+      print(v)
+105
+305
+505
+705
+ans:
+105
+305
+505
+705
