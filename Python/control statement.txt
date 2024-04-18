@@ -1,0 +1,454 @@
+1.What is difference between break and continue?
+break
+-The break keyword is used to exit from the loop.
+-it can be used only for loop statements. 
+continue
+-The continue keyword is used to skip that particular part and the remaining will be executed.
+
+2.What is mean by control statments and types?
+control statement is used to control the flow of the program
+types
+-if 
+-if else
+-if elif else
+-nested if
+-for
+-while
+-nested for loop
+
+
+3.What is mean by for loop?
+ for loop is used to do same set of again and again we go for looping
+
+4.Can you explain about for loop execution process? 
+ step1 - to check what is the initial value
+ step2 - check the condition
+ Step3- if the condition is true, the code will be executed. next, the value should be increased.
+ step4-once the condition returns false the loop stops running. then, the program moves on to execute the next statement after the loop
+
+5.Difference between for and while loop?
+For loops are designed for iterating over a sequence of items.
+While loop is used when the number of iterations is not known in advance or when we want to repeat a block of code until a certain condition is met.
+
+6.Is it possible to use break and continue outside of loop?
+no, jump statement are specifically designed to control the flow within loops.
+
+7.Write a syntax of for?
+for varname in  range(start,end-1,inc/dec):
+   statement
+
+8.Write a syntax of while()?
+while(condition)
+  statement
+
+9.Write a syntax of elif?
+if(condition):
+    business logic
+elif(condition):
+    business logic
+else:
+    business logic
+
+10.Difference between if-else and elif?
+if-else statement is used when you want to check  one condition we go for if-else statement
+elif statement is used when you have multiple conditions to check we go for elif statement
+
+
+
+QUESTIONS(Find the output)
+-----------------------
+QUESTION 1:
+------------
+
+for x in range(1,100):
+    if(x==5):
+      
+print(x)
+ans:IndentationError
+
+QUESTION 2:
+------------
+for x in range(1,100):
+    if(x==5):
+        break
+print(x)
+
+ans:5
+
+QUESTION 3:
+----------
+for x in range(1,100):
+    if(x==5):
+        continue
+print(x)
+
+ans:99
+
+QUESTION 4:
+------------
+for x in range(1,4):
+   for y in range(1,4):
+       print(y)
+print(x)
+
+ans:
+1
+2
+3
+1
+2
+3
+1
+2
+3
+3
+
+QUESTION 5:
+------------
+for x in range(1,4):
+   for y in range(1,4):
+       print(x)
+
+ans:
+1
+1
+1
+2
+2
+2
+3
+3
+3
+
+QUESTION 6:
+-----------
+for x in range(1,4):
+   for y in range(1,x):
+       print(y)
+
+ans:
+1
+1
+2
+
+QUESTION 7:
+-----------
+for x in range(1,4):
+   for y in range(x+1,4):
+       print(y)
+
+ans:
+2
+3
+3
+
+QUESTION 8:
+------------
+for x in range(1,4):
+   for y in range(x+1,x):
+       print(y)
+ans:
+program executed nothing will be printed
+
+QUESTION 9:
+------------
+i=5;
+if i==5:
+    break;
+
+ans:
+ break;
+    ^
+SyntaxError: 'break' outside loop
+
+QUESTION 10:
+------------
+i=5;
+if i==5:
+    continue
+
+ans:
+ continue
+    ^
+SyntaxError: 'continue' not properly in loop
+
+QUESTION 11:
+------------
+for x in range(1,100):
+    if(x==5):
+        print(x)
+
+ans:5
+
+QUESTIONS(Programs)
+-------------------
+QUESTION 1:
+-----------
+Description: Write Python program to allow the user to input his/her age.     
+             Then the program will show if the person is eligible to vote.
+             A person who is eligible to vote must be older than or equal 1 to 18 years old.
+Example:
+--------
+Input  = 10
+Output = print not eligible.
+
+age=int(input("enter your age: "))
+if age>=18:
+    print("eligible to vote")
+else:
+    print("not eligible to vote")
+
+ans:
+enter your age: 10
+not eligible to vote
+
+QUESTION 2:
+-----------
+Description: Write a program to find even or odd number
+
+Example:
+---------
+Input  = 10
+Output = Even
+
+num=int(input("enter your number: "))
+if num%2==0:
+    print("even")
+else:
+    print("odd")
+
+ans:
+enter your number: 8
+even
+
+QUESTION 3:
+------------
+Description: Write a program to print even number from 1 to 100 
+
+Example:
+---------
+Output = 2,4,....100
+
+for i in range(1,100+1,1):
+    if i%2==0:
+        print(i)
+
+ans:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+22
+24
+26
+28
+30
+32
+34
+36
+38
+40
+42
+44
+46
+48
+50
+52
+54
+56
+58
+60
+62
+64
+66
+68
+70
+72
+74
+76
+78
+80
+82
+84
+86
+88
+90
+92
+94
+96
+98
+100
+
+QUESTION 4:
+------------
+Description: Find the sum of odd number 1 to 100
+
+Example:
+--------
+Output = 2500
+
+sum=0
+for i in range(1,100,1):
+     if(i%2!=0):
+         sum=sum+i
+print(sum)
+
+ans:2500
+
+QUESTION 5:
+-----------
+Description: Count of even number 1 to 100
+
+Example:
+--------
+Output = 50
+
+count=0
+for i in range(1,100,1):
+     if(i%2==0):
+         count=count+1
+print(count)
+
+ans:50
+
+QUESTION 6:
+-----------
+Description: Write a program to find the factorial of a number.
+
+Example:
+--------
+Input  = 5
+Output = 120
+
+fact=1
+num=int(input("enter your number: "))
+for i in range(1,num+1):
+ fact=fact*i
+print(fact)
+
+ans:
+enter your number: 5
+120
+
+QUESTION 7:
+------------
+Description: Write a program to print the fibonacci series of a number 1 to 100.
+
+Example:
+--------
+Output = 0,1,1,2,3,5.....
+
+f=0
+s=1
+for i in range(100):
+    print(f)
+    t=f+s
+    f=s
+    s=t
+ans:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+10946
+17711
+28657
+46368
+75025
+121393
+196418
+317811
+514229
+832040
+1346269
+2178309
+3524578
+5702887
+9227465
+14930352
+24157817
+39088169
+63245986
+102334155
+165580141
+267914296
+433494437
+701408733
+1134903170
+1836311903
+2971215073
+4807526976
+7778742049
+12586269025
+20365011074
+32951280099
+53316291173
+86267571272
+139583862445
+225851433717
+365435296162
+591286729879
+956722026041
+1548008755920
+2504730781961
+4052739537881
+6557470319842
+10610209857723
+17167680177565
+27777890035288
+44945570212853
+72723460248141
+117669030460994
+190392490709135
+308061521170129
+498454011879264
+806515533049393
+1304969544928657
+2111485077978050
+3416454622906707
+5527939700884757
+8944394323791464
+14472334024676221
+23416728348467685
+37889062373143906
+61305790721611591
+99194853094755497
+160500643816367088
+259695496911122585
+420196140727489673
+679891637638612258
+1100087778366101931
+1779979416004714189
+2880067194370816120
+4660046610375530309
+7540113804746346429
+12200160415121876738
+19740274219868223167
+31940434634990099905
+51680708854858323072
+83621143489848422977
+135301852344706746049
+218922995834555169026
