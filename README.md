@@ -1,1 +1,1 @@
-# Data-Science
+Data science is really a progression of three steps. We collect data, then analyze the trends within the data, and lastly we make decisions based on the data. Data science is a process in which the goal is to make better choices.
