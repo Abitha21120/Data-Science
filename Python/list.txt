@@ -1,0 +1,624 @@
+
+QUESTIONS(Theory)
+----------------------
+1.What is list?
+-list is used to store multiple value in single variable.
+-list follow insertion order.
+-list will work based on index.
+-list allow duplicate value.
+
+2.How to remove the values from list?
+using remove() function to remove the value.
+
+3.What is the difference between append( ) and extend( )?
+-append() function is used to add one value at the end of the list.
+-extends() function is used to add multiple value at the end of the list
+
+4.How to find the length of list?
+using len () function to find the length of the list
+
+5.What are the methods present in list?
+append()
+extend()
+insert()
+remove()
+pop()
+clear()
+count()
+sort() 
+reverse()
+copy()
+len()
+index()
+slice operator
+del()
+in
+not in
+
+6.Is Negative indexing in list possible or not?
+yes it is possible
+
+7.How to delete or remove elements from a list?
+-delete function is used to give the index to remove the particular value
+-remove function is used to remove the particular value mention in the remove function
+
+8.How to change or add elements to a list?
+first find the index position then using append()fuction to add the value.
+
+9.How to slice lists in Python?
+-first print the starting index position then print the colon(:)
+-second print the ending index position then print the colon(:)
+-then print the increment value
+
+10.How to access elements from a list?
+use the index within square brackets [] get the value from the list
+
+11.What is difference between pop() and delete()?
+pop() function is used to remove the value using index position.
+del() function is used to remove the many value using index position 
+
+12.What are ways used for removing all values from list?
+using clear() function to remove the all value from list
+ 
+13.What is the difference between sort() and Sorted()?
+sort() function is used to print the value in ascending order
+sorted() function is also used to print the value in ascending order but it is immutable we assign the value in variable.
+
+14.Write a ways to sort values in descending order?
+inside () write reverse=True 
+
+15.Is posible to check whether value is present or not?
+yes using  in function
+
+QUESTIONS(Practical)
+-----------------------------------------------
+QUESTION 1:
+------------------
+Description : Create a new list with values and find the length of it
+              Input : List = 10,20,30,90,10,10,40,50
+
+List = [10,20,30,90,10,10,40,50]
+print(len(List))
+ans:8
+
+QUESTION 2:
+------------------
+Description : Create a new list with values and find the length of it
+              Input : List = 105,205,305,405,505,605,705,805
+
+List = [105,205,305,405,505,605,705,805]
+print(len(List))
+ans:8
+
+QUESTION 3:
+------------------
+Description : Create a new list with values and find the length of it
+              Input : List = 'Java','Python','Selenium','java',10,20,10
+
+List = [ 'Java','Python','Selenium','java',10,20,10]
+print(len(List))
+ans:8
+
+QUESTION 4:
+------------------
+QUESTION 4.1:
+--------------------
+Description : Get the  index value of 10 
+              Input:   List = 10,20,30,90,10,50
+
+List = [10,20,30,90,10,50]
+print(List.index(10))
+ans:0
+
+QUESTION 4.2:
+--------------------
+Description : Get the last index value of 10 
+              Input:   List = 10,20,30,90,10,10,40,50
+List = [10,20,30,90,10,10,40,50,10]
+l1=List.index(10,6)
+print(l1)
+ans:8
+
+QUESTION 4.3:
+--------------------
+Description : Get the index value of 50 
+              Input:   List = 10,20,30,90,10,10,40,50
+
+List = [10,20,30,90,10,10,40,50]
+print(List.index(50))
+ans:7
+
+QUESTION 4.4:
+--------------------
+Description : Get the index value of 90 
+              Input:   List = 10,20,30,90,10,10,40,50
+
+List = [10,20,30,90,10,10,40,50]
+print(List.index(90))
+ans:3
+
+QUESTION 4.5:
+--------------------
+Description : Get the each index value of 10 present in below list 
+              Input:   List = 10,20,30,90,10,10,40,50,10
+
+List = [10,20,30,90,10,10,40,50,10]
+print(List.index(10))
+print(List.index(10,2))
+print(List.index(10,6))
+print(List.index(10,5))s
+print(List.index(10,4))
+ans:
+0
+4
+8
+5
+4
+
+QUESTION 4.6:
+--------------------
+Description : Get the  index value of 70 present in below list 
+              Input:   List = 10,20,30,90,10,10,40,50,10
+
+List = 10,20,30,90,10,10,40,50,10
+print(List.index(70))
+ans:ValueError
+
+QUESTION 4.7:
+--------------------
+Description : Add a value [100,200,300] at the last position of list and find index value of 200
+Input : List = 10,20,30,90,10,10,40,50,[100,200,300]
+
+List = [10,20,30,90,10,10,40,50]
+List.append([100,200,300])
+print(List)
+print(List.index([100,200,300]))
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, [100, 200, 300]]
+8
+
+QUESTION 4.8:
+--------------------
+Description : Add a value [100,200,300] at the last position of list and find index value of 200
+              Input : List = 10,20,30,90,10,10,40,50,100,200,300
+
+List = [10, 20, 30, 90, 10, 10, 40, 50]
+List.extend([100, 200, 300])
+print(List)
+print(List.index(200))
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 100, 200, 300]
+9
+
+QUESTION 5:
+------------------
+QUESTION 5.1:
+--------------------
+Description : Get the value present at 2nd index
+              Input:   List = 10,20,30,40,50,60
+
+List = [10,20,30,40,50,60]
+print(List.pop(2))
+ans:30
+
+QUESTION 5.2:
+--------------------
+Description : Get the value present at 4th index
+              Input:   List = 100,200,300,400,500,600,700
+
+List = [10,20,30,40,50,60]
+print(List.pop(4))
+ans:50
+
+QUESTION 5.3:
+--------------------
+Description : Get the value present at -2nd index
+              Input:   List = 105,205,305,405,505,605,705,805
+
+List = [105,205,305,405,505,605,705,805]
+print(List.pop(-2))
+ans:705
+
+QUESTION 5.4:
+--------------------
+Description : Get the value present at -10th index
+              Input:   List = 105,205,305,405,505,605,705,805
+
+List = [105,205,305,405,505,605,705,805]
+print(List.pop(-10))
+ans:IndexError
+
+QUESTION 6:
+------------------
+QUESTION 6.1:
+--------------------
+Description : Remove the value present at 2nd index and print the removed value
+              Input:   List = 10,20,30,40,50,60
+
+List = [10,20,30,40,50,60]
+print(List.pop(2))
+print(List)
+ans:
+30
+[10, 20, 40, 50, 60]
+
+QUESTION 6.2:
+--------------------
+Description : Remove the value present at 10th index 
+              Input:   List = 10,20,30,90,10,10,40
+List = [10,20,30,90,10,10,40]
+List.pop(10)
+print(List)
+ans:IndexError
+
+QUESTION 6.3:
+--------------------
+Description : Remove the last value of 10 present in the list  
+              Input:   List = 10,20,30,90,10,10,40
+
+l =[10,20,30,90,10,10,40]
+l1=l.index(10,4)
+l.pop(l1)
+print(l)
+ans:
+[10, 20, 30, 90, 10, 40]
+
+QUESTION 6.4:
+--------------------
+Description : Remove the last value  present in the list  
+              Input:   List = 10,20,30,90,10,10,40
+
+List = [10,20,30,90,10,10,40]
+List.pop()
+print(List)
+ans:[10, 20, 30, 90, 10, 10]
+
+QUESTION 6.5:
+--------------------
+Description : Remove the value 80  present in the list  
+              Input:   List = 10,20,30,90,10,10,40,60,80,100
+
+List = [10,20,30,90,10,10,40,60,80,100]
+List.remove(80)
+print(List)
+ans:[10, 20, 30, 90, 10, 10, 40, 60, 100]
+
+QUESTION 6.6:
+--------------------
+Description : Remove the value 50  present in the list  
+              Input:   List = 10,20,30,90,10,10,40,60,80,100
+
+List = [10,20,30,90,10,10,40,60,80,100]
+List.remove(50)
+print(List)
+ans:ValueError
+
+QUESTION 6.7:
+--------------------
+Description : delete the value  present in (-5th to -1st) index in the list  
+              Input:   List = 10,20,30,90,10,10,40,60,80,100
+
+l = [10,20,30,90,10,10,40,60,80,100]
+del l[-5:-1:1]
+print(l)
+ans:[10, 20, 30, 90, 10, 100]
+
+QUESTION 6.8:
+--------------------
+Description : delete the value  present in (2nd to last) index in the list  
+              Input:   List = 10,20,30,90,10,10,40,60,80,100
+l = [10,20,30,90,10,10,40,60,80,100]
+del l[2:11:1]
+print(l)
+ans:[10, 20]
+
+QUESTION 6.9:
+--------------------
+Description : clear all the value  present in the list  
+              Input:   List = 10,20,30,90,10,10,40,60,80,100
+
+l = [10,20,30,90,10,10,40,60,80,100]
+l.clear()
+print(l)
+ans:[]
+
+QUESTION 7:
+------------------
+QUESTION 7.1:
+--------------------
+Description : Replace the value 300 into 350 in the list
+              Input : List = 100,200,300,400,500,600,700
+
+l = [100,200,300,400,500,600,700]
+l1=l.index(300)
+l[l1]=350
+print(l)
+ans:
+[100, 200, 350, 400, 500, 600, 700]
+
+QUESTION 7.2:
+--------------------
+Description : Replace the value present in 7th index as 90 
+              Input:   List = 10,20,30,90,10,10,40,50,10
+
+l = [10,20,30,90,10,10,40,50,10]
+l.pop(7)
+l.insert(7,90)
+print(l)
+ans:[10, 20, 30, 90, 10, 10, 40, 90, 10]
+
+QUESTION 7.3:
+---------------------
+Description : Replace the 10 into 100 in List
+        Input:   List = 10,20,30,90,10,10,40,50,30
+        Output:  List = 100,20,30,90,100,100,40,50,30
+
+l = [10,20,30,90,10,10,40,50,30]
+for i in range(len(l)):
+  if l[i]==10:
+      l[i]=100
+print(l)
+ans:
+[100, 20, 30, 90, 100, 100, 40, 50, 30]
+
+QUESTION 8:
+------------------
+QUESTION 8.1:
+---------------------
+Description : Add a value 50 in the 2nd index and display the list after adding.
+              Input : List = 10,20,30,90,10,10,40,50
+
+List =[10,20,30,90,10,10,40,50]
+List[2]=50
+print(List)
+ans:
+[10, 20, 50, 90, 10, 10, 40, 50]
+
+QUESTION 8.2:
+---------------------
+Description : Add a value 70 at the end of the list
+              Input : List = 10,20,30,90,10,10,40,50
+
+List =[10,20,30,90,10,10,40,50]
+List.append(70)
+print(List)
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 70]
+
+QUESTION 8.3:
+--------------------
+Description : Add a value 80 at the 30th index of list
+              Input : List = 10,20,30,90,10,10,40,50
+
+List =[10,20,30,90,10,10,40,50]
+List.insert(30,80)
+print(List)
+print(List.index(80))
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 80]
+8
+
+QUESTION 8.4:
+--------------------
+Description : Add a value 100 at the last index of 10 in the list
+              Input : List = 10,20,30,90,10,10,40,50
+
+List =[10,20,30,90,10,10,40,50]
+List.insert(10,100)
+print(List)
+print(List.index(100))
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 100]
+8
+
+QUESTION 9:
+-------------------
+QUESTION 9.1:
+---------------------
+Description : Add a value 100,200,300 at the last position of list
+              Input : List = 10,20,30,90,10,10,40,50
+List =[10,20,30,90,10,10,40,50]
+List.extend([100,200,300])
+print(List)
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 100, 200, 300]
+
+QUESTION 9.2:
+---------------------              
+Description : Add a value [100,200,300] at the last position of list
+              Input : List = 10,20,30,90,10,10,40,50
+              Output : List = 10,20,30,90,10,10,40,50,[100,200,300] 
+
+List =[10,20,30,90,10,10,40,50]
+List.append([100,200,300])
+print(List)
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, [100, 200, 300]]
+
+QUESTION 10:
+------------------
+Description : Add a value [100,200,300] at the last position of list
+              Input : List = 10,20,30,90,10,10,40,50
+              Output : List = 10,20,30,90,10,10,40,50,100,200,300
+
+List =[10,20,30,90,10,10,40,50]
+List.extend([100,200,300])
+print(List)
+ans:
+[10, 20, 30, 90, 10, 10, 40, 50, 100, 200, 300]
+
+QUESTION 10:
+------------------
+QUESTION 10.1:
+----------------------
+Description : count the 10 value present in the list
+              Input : List = 10,20,30,90,10,10,40,50
+
+count=0
+l =[10,20,30,90,10,10,40,50]
+for i in l:
+    if i==10:
+        count=count+1
+print(count)
+ans:3
+
+QUESTION 10.2:
+----------------------
+Description : find the maximum value in the list
+              Input : List = 10,20,30,90,10,10,40,50
+
+l =[10,20,30,90,10,10,40,50]
+print(max(l))
+ans:90
+
+QUESTION 10.3:
+----------------------
+Description : find the maximum value in the list
+              Input : List = 'java','python','selenium','Java','Python','Selenium'
+
+l =['java','python','selenium','Java','Python','Selenium']
+print(min(l))
+ans:Java            
+
+QUESTION 10.4:
+----------------------
+Description : find the minimum value in the list
+              Input : List = 10,20,30,90,10,10,40,50
+
+l =[ 10,20,30,90,10,10,40,50]
+print(min(l))
+ans:10
+
+QUESTION 10.5:
+----------------------
+Description : find the minimum value in the list
+              Input : List = 'java','python','selenium','Java','Python','Selenium'
+
+l =['java','python','selenium','Java','Python','Selenium']
+print(min(l))
+ans:Java
+
+QUESTION 11:
+----------------------
+QUESTION 11.1:
+----------------------
+Description : Reverse the values present in list
+              Input : List = 10,20,30,50,90,40,100,60,10,70
+
+l =[10,20,30,50,90,40,100,60,10,70]
+l.reverse()
+print(l)
+ans:
+[70, 10, 60, 100, 40, 90, 50, 30, 20, 10]
+
+QUESTION 11.2:
+----------------------
+Description : Sort the values (Ascending &Descending ) order present in list
+              Input : List = 10,20,30,50,90,40,100,60,10,70
+l =[10,20,30,50,90,40,100,60,10,70]
+l.sort()
+print(l)
+ans:
+[10, 10, 20, 30, 40, 50, 60, 70, 90, 100] 
+
+l =[10,20,30,50,90,40,100,60,10,70]
+l.sort(reverse=True)
+print(l)
+ans:
+[100, 90, 70, 60, 50, 40, 30, 20, 10, 10]          
+
+QUESTION 12:
+-------------------
+QUESTION 12.1:
+----------------------
+
+Description : Copy the values in list
+              Input : List = 10,20,30,90,10,10,40,50
+
+l =[10,20,30,90,10,10,40,50]
+c=l.copy()
+print(c==l)
+ans:True
+
+QUESTION 12.2:
+----------------------
+Description : Create a lists with values and compare the two list
+              Input : List = 10,20,30,90,10,10,40,50
+              Input : List = 30,40,50,60,80
+
+l =[10,20,30,90,10,10,40,50]
+l1=[30,40,50,60,80]
+print(l==l1)
+
+ans:False
+
+QUESTION 12.3:
+----------------------
+Description : Create a lists with values and compare the two list
+              Input : List = 10,20,30,90,10,10,40,50
+              Input : List = 10,20,30,90,10,10,40,50
+
+l =[10,20,30,90,10,10,40,50]
+l1=[10,20,30,90,10,10,40,50]
+print(l==l1)
+ans:True
+
+QUESTION 13:
+--------------------
+QUESTION 13.1:
+---------------------
+Description : Get the each value of list by using  for loop
+              Input:   List = 105,205,305,405,505,605,705,805
+
+l =[ 105,205,305,405,505,605,705,805]
+for i in l:
+   print(i)
+ans:
+105
+205
+305
+405
+505
+605
+705
+805
+
+QUESTION 13.2:
+----------------------
+Description : Get the each value of list by using  Enumarate for loop
+              Input:   List = 105,205,305,405,505,605,705,805
+
+l =[ 105,205,305,405,505,605,705,805]
+for i in enumerate(l):
+   print(i)
+ans:
+(0, 105)
+(1, 205)
+(2, 305)
+(3, 405)
+(4, 505)
+(5, 605)
+(6, 705)
+(7, 805)
+
+QUESTION 13.3:
+----------------------
+Description : Get the each value of list by using  Enumarate for loop and print only odd index value
+              Input:   List = 105,205,305,405,505,605,705,805
+
+l =[ 105,205,305,405,505,605,705,805]
+for i,num in enumerate(l):
+   if i%2!=0:
+    print(num)
+ans:
+205
+405
+605
+805
+
+
+
+
+
+
+
