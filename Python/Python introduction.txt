@@ -31,7 +31,7 @@
 -database application
 -IOT(internet of things)
 -data analytics
--web application
+-web applications
 
 6. What are limitation of python?
 -large memory consumption 
