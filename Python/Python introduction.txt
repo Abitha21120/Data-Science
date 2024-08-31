@@ -1,5 +1,5 @@
 1. What are version available in python?
--Python 1
+-Python 
 -Python 2(it support python1 feature)-
 -Python 3(it does not support Python 2 feature)
   
